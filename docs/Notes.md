@@ -1,6 +1,7 @@
-Anotações
 
-*gRPC*
+# Anotações
+
+## gRPC
 
 - É um framework gratuito e open-source desenvolvido pelo Google;
 - É parte da Cloud Native Computation Foudation (CNCF) como Docker e Kubernetes, por exemplo;
@@ -10,7 +11,7 @@ Anotações
 - Fácil de plugar autenticação, load balancing, log e monitoração
 - Resolve uma série de problemas encontrados nas antigas implementações de RPC (ex. CORBA, JAVA RMI)
 
-*Protocol Buffers*
+## Protocol Buffers
 
 - É agnóstico da linguagem de programação
 - Dados são binários serializados (small payloads)
@@ -21,7 +22,7 @@ Anotações
 - Protocal Buffer, define regras para evoluir a API sem quebrar os clientes já existentes
 
 
-*A eficiência do Protocol Buffers em relação ao JSON / XML*
+## A eficiência do Protocol Buffers em relação ao JSON / XML
 
 - Menor payload, as mensagens são menores, economia de banda de rede
 - Parsing JSON/XML exige bastante processamento, são formatos para leitura dos humanos para para processamento do computador
@@ -29,7 +30,8 @@ Anotações
 - gRPC por usar Protocol Buffers é mais rápido e com comunicação mais eficiente, bom para dispositivos com baixo poder de CPU
 
 
-*Material de apoio*
+## Material de apoio
 
 [Material do Curso gRPC Golang Master Class](https://github.com/simplesteph/grpc-go-course)
+
 [gRPC Web Site](https://grpc.io)
