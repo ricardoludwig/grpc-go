@@ -47,6 +47,7 @@ latência
 - Suporte para streaming
 - Fácil de plugar autenticação, load balancing, log e monitoração
 - Resolve uma série de problemas encontrados nas antigas implementações de RPC (ex. CORBA, JAVA RMI)
+- gRPC é orientado a API ao invés de orientado ao recurso como REST
 
 Resumindo, HTTP/2 exige menos convesaçõa, é um protocolo mais eficiente (menor consumo de banda de rede), menor latência e pode ser mais seguro uma fez que
 por padrão quando usamos HTTP/2 utilizamos com SSL, mesmo não sendo obrigatório.
@@ -70,11 +71,11 @@ por padrão quando usamos HTTP/2 utilizamos com SSL, mesmo não sendo obrigatór
 - Client Streaming, o cliente envia um streaming de dados e o servidor envia uma resposta
 - Streaming bi-direcional, tanto cliente como servidor fazem a comunicação através do envio de streamings de dados
 
-[Tipos de API gRPC](tipos-de-gRPC.png)
+![Tipos de API gRPC](tipos-de-gRPC.png)
 
 ## gRPC vs REST
 
-[gRPC vs REST](gRPC-vs-REST.png)
+![gRPC vs REST](gRPC-vs-REST.png)
 
 ## Material de apoio
 
