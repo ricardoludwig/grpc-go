@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package unary;
+option go_package="unary/protos";
+
+message HealthCheck {
+  string status = 1;
+}
+
+message HealthCheckRequest {
+  HealthCheck health = 1;
+}
+
+message HealthCheckResponse {
+  string response = 1;
+}
+
+service HealthCheckService {
+  rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse) {};
+}
