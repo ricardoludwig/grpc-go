@@ -105,11 +105,11 @@ seguro uma fez que por padr√£o quando usamos HTTP/2 utilizamos com SSL, mesmo n√
 
 ### gRPC Server Streaming
 
-![Tipos de API gRPC](doc/tipos-de-gRPC.png)
+![Tipos de API gRPC](docs/tipos-de-gRPC.png)
 
 ## gRPC vs REST
 
-![gRPC vs REST](doc/gRPC-vs-REST.png)
+![gRPC vs REST](docs/gRPC-vs-REST.png)
 
 # Material de apoio
 
