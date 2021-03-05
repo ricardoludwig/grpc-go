@@ -13,7 +13,9 @@ import (
 type server struct{}
 
 func (*server) HealthCheck(ctx context.Context, req *protos.HealthCheckRequest) (*protos.HealthCheckResponse, error) {
-	fmt.Printf("Teste")
+	ask := req.GetHealth().GetStatus()
+	fmt.Println(ask)
+
 	res := &protos.HealthCheckResponse{
 		Response: "OK",
 	}

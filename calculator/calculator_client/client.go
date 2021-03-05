@@ -6,7 +6,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/ricardoludwig/grpc-go-demo/calculator/calculatorpb"
+	"github.com/ricardoludwig/grpc-go/calculator/calculatorpb"
 	"google.golang.org/grpc"
 )
 
