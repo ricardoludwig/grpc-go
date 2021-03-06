@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package solarsystem;
+option go_package="solar-system/protos";
+
+message SolarSystem {
+  repeated Body bodies = 1;
+}
+
+message Body {
+  string name = 1;
+  bool isPlanet = 2;
+  Planet planet = 3;
+}
+
+message Planet {
+  string name = 1;
+  repeated Moon moons = 2;
+}
+
+message Moon {
+  string name = 1;
+}
+
+message SolarSystemRequest {
+  string body = 1;
+}
+
+message SolarSystemResponse {
+  Body body = 1;
+}
+
+service SolarSystemService {
+  rpc SolarSystem(SolarSystemRequest) returns (SolarSystemResponse) {};
+}

@@ -105,13 +105,17 @@ seguro uma fez que por padr√£o quando usamos HTTP/2 utilizamos com SSL, mesmo n√
 
 ### gRPC Server Streaming
 
+- Pendente
+
 ![Tipos de API gRPC](docs/tipos-de-gRPC.png)
 
 ## gRPC vs REST
 
 ![gRPC vs REST](docs/gRPC-vs-REST.png)
 
-# Material de apoio
+# Material de estudo
+
+[gRPC - Doc](https://grpc.io/docs/)
 
 [Material do Curso gRPC Golang Master Class](https://github.com/simplesteph/grpc-go-course)
 
