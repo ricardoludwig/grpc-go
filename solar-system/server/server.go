@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"log"
 	"net"
@@ -32,12 +33,14 @@ func connect() {
 	}
 }
 
+var ErrorNotFound = errors.New("not found")
+
 func (*server) SolarSystem(ctx context.Context, req *protos.SolarSystemRequest) (*protos.SolarSystemResponse, error) {
 
 	body := req.GetBody()
 
 	if body != "Earth" {
-		return nil, fmt.Errorf("code: 404, status: Not found")
+		return nil, fmt.Errorf("%v %w", body, ErrorNotFound)
 	}
 
 	response := &protos.SolarSystemResponse{

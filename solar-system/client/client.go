@@ -16,12 +16,12 @@ func main() {
 
 	c := protos.NewSolarSystemServiceClient(con)
 	req := &protos.SolarSystemRequest{
-		Body: "Earth",
+		Body: "Moon",
 	}
 
 	res, err := c.SolarSystem(context.Background(), req)
 	if err != nil {
-		log.Fatalf("Error while calling Solar System Server: %v", err)
+		log.Fatal(err)
 	}
 
 	log.Printf("Solar System response: %v", res.GetBody())
