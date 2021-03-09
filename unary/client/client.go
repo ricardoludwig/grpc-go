@@ -11,13 +11,7 @@ import (
 
 func main() {
 
-	//con := connect()
-	fmt.Println("Starting Unary Client")
-
-	con, err := grpc.Dial("localhost:8180", grpc.WithInsecure())
-	if err != nil {
-		log.Fatalf("Could not connect: %v", err)
-	}
+	con := connect()
 	defer con.Close()
 
 	c := protos.NewHealthCheckServiceClient(con)
@@ -43,6 +37,5 @@ func connect() (con *grpc.ClientConn) {
 	if err != nil {
 		log.Fatalf("Could not connect: %v", err)
 	}
-	defer con.Close()
 	return con
 }
